@@ -61,3 +61,12 @@ importBtn.addEventListener('click', function(){
   alert('File Upload Successful!');
   form.reset();
 });
+
+//// add event in sideBar
+
+const sideBar = document.getElementById('sidebar');
+
+
+sideBar.addEventListener('click', function(){
+  sideBar.classList.toggle('active');
+})

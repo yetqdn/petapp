@@ -20,18 +20,11 @@ const  btnHealthy = document.getElementById('healthy-btn');
 const rowBmi = document.getElementById('row-bmi');
 const formElement = document.getElementById('id-form');
 
-//Assigment 2
-
-const sideBar = document.getElementById('sidebar');
-
-
-
 
 const arrPet = JSON.parse(getFromStorage('arrPet')) ?? []; //khai bao gia tri bien doi thanh obj hoac []
 let healthyPet = [];
 let healthyCheck = false;
 let table =''; // bien global
-// let petId;
 let flat = true;
 
 
@@ -271,14 +264,10 @@ btnHealthy.addEventListener('click', function() {
     renderTableData(healthyPet);
   }
 })
-  
-//Assigment 2
+//////////////////////////////////
+//////Assigment 2///////////////
+//////////////////////////////
 
-// add event in sideBar
-
-sideBar.addEventListener('click', function(){
-  sideBar.classList.toggle('active');
-})
 // function cho hien thi tat ca thu cung da luu by localStorage
 
 renderTableData(arrPet);
@@ -313,81 +302,11 @@ function renderOptionTypeBreed (arr){
 }
 typeInput.onchange = typeBreed; 
 
+//// add event in sideBar
+
+const sideBar = document.getElementById('sidebar');
 
 
-//tinh bmi
-
-// btnCalcBmi.addEventListener('click', calcBmi());
-
-// btnDelete.addEventListener('click', function(){
-//   console.log('hihi');
-//   deletePet();
-// })
-
-// const num = [{a:2, x: 1},{b:3, x:2},{c:4, x:3},{d:5,x:4}];
-// for (let ts = 0; ts < num.length; ts ++) {
-//   console.log(num[ts].x);
-// }
-
-
-// const idex = num.findIndex(vard);
-
-// function vard(a) {
-//   return a.x == 1;
-// }
-
-// console.log(idex)
- 
-// const num2 = [{id: '2', name: 'jj', age: 8, type: 'Dog', weight: 6, },
-
-
-// {id: '8', name: 'tr', age: 8, type: 'Cat', weight: 8,}]
-// const index = num2.findIndex(vard2);
-
-// function vard2(a) {
-//   return a.id == 8;
-// }
-
-// console.log(index)
-
-// function padTo2Digits(num) {
-//   return num.toString().padStart(2, '0');
-//   }
-  
-//   function formatDate(date) {
-//   return [
-//   padTo2Digits(date.getDate()),
-//   padTo2Digits(date.getMonth() + 1),
-//   date.getFullYear(),
-//   ].join('/');
-//   }
-  
-//   // 👇 24/07/2023 (DD/MM/YYYY)
-//   console.log(formatDate(new Date()));
-  
-//   // 👇 24/07/2027 (DD/MM/YYYY)
-//   console.log(formatDate(new Date(2027, 6, 24)));11:04 AM
-//   cách làm là khi add vào arrPet11:04 AM
-//   thì mình format luôn11:04 AM
-//   khi hiển thị ra mình ko cần format nữa nha
-
-// const date = new Date();
-
-// // ✅ DD/MM/YYYY
-// const result1 = new Date().toLocaleDateString('en-GB');
-// console.log(result1); // 👉️ 24/07/2023
-// const  array1 = [4, 1, 3, 2];
-// const array2 = [];
-
-// function sortArrayDescending(array) {
-//   var sortedArray = array.slice();
-//   sortedArray.sort((a, b) => a - b);
-//   return sortedArray;
-// }
-// ;
-// console.log(sortArrayDescending(array1))
-// const array = [1, 2, 3, 4];
-
-// array.sort((a, b) => b - a);
-
-// console.log(array); 
+sideBar.addEventListener('click', function(){
+  sideBar.classList.toggle('active');
+})

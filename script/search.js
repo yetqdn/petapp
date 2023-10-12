@@ -209,3 +209,11 @@ btnFind.addEventListener('click', function(){
   }
 });//ket thuc
 
+//// add event in sideBar
+
+const sideBar = document.getElementById('sidebar');
+
+
+sideBar.addEventListener('click', function(){
+  sideBar.classList.toggle('active');
+})

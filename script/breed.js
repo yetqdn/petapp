@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 const submitBtnBreed = document.getElementById('submit-btn-breed');
 let idBreed = document.getElementById('input-breed');
 let typeBreed = document.getElementById('input-type-breed');
@@ -86,3 +88,12 @@ submitBtnBreed.addEventListener('click', function(){
   idBreed.value = '';
   typeBreed.value = 'Select Type';
 });
+
+//// add event in sideBar
+
+const sideBar = document.getElementById('sidebar');
+
+
+sideBar.addEventListener('click', function(){
+  sideBar.classList.toggle('active');
+})

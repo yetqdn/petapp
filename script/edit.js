@@ -155,3 +155,12 @@ submitBtn.addEventListener('click', function(){
 })
 
 inputType.onchange = optionBreed;
+
+//// add event in sideBar
+
+const sideBar = document.getElementById('sidebar');
+
+
+sideBar.addEventListener('click', function(){
+  sideBar.classList.toggle('active');
+})
