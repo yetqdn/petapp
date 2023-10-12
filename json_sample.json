@@ -1,0 +1,2 @@
+[{"id":"1000","name":"Hannh","age":8,"type":"Cat","weight":6,"height":7,"color":"#000000","breed":"Domestic Short Hair","vacine":false,"deworm":false,"sterilize":false,"date":"11/10/2023","bmi":"?"},
+ {"id":"2000","name":"Chau","age":9,"type":"Cat","weight":6,"height":1,"color":"#000000","breed":"Mixed Breed","vacine":false,"deworm":true,"sterilize":false,"date":"08/10/2023","bmi":"?"}]
