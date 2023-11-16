@@ -17,7 +17,7 @@ const submitBtn = document.getElementById('submit-btn');
 
 //const inputBreed = document.getElementById('input-breed');
 
-const arrPetEdit = JSON.parse(getFromStorage('arrPet'));
+const arrPetEdit = JSON.parse(getFromStorage('arrPet'))  ?? [];
 console.log(arrPetEdit);
 function renderBreedEdit(){
   var htmlBreedEdit = '';
